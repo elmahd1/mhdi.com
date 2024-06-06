@@ -59,29 +59,30 @@ position: absolute;
         display:block;
         margin: 30px;
         margin-left: 125px;
-        margin
     }
     #login{
         position: absolute;
-  left: 40%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  padding: 10px 20px;
+        left: 40%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        padding: 10px 20px;
  
     }
 </style>
 </head>
 <body>
+    <a href="page.html">hi</a>
     <div id="title"><h1>Bienvenu dans notre siteweb</h1></div>
     <input  type="button" id="login" value="log in" > 
-    
+  
 <div id="container" class="container">
   
 
 </div> 
 
+
 <script>
-    let l=document.getElementById("login")
+    let l=document.getElementById("login");
     l.addEventListener('click',function(){
         container.style.display="block"
         l.style.display="none";
@@ -106,9 +107,13 @@ position: absolute;
         b.name="submit";
         container.appendChild(b);
            })
-           b.addEventListener('click',function(){
-          if(getElementById('nom').value==='') alert('hhhhh');
-           })
+            document.getElementById("submit").addEventListener("click", function() {
+            var nomValue = document.getElementById("nom").value;
+            if (nomValue === '') {
+                alert('hhhhh');
+            }
+        });
+           
 </script> 
 </body>
 </html>
