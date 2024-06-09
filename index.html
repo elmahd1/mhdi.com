@@ -77,6 +77,24 @@ buttons[i].style.backgroundColor='blue';
 buttons[i].style.backgroundColor='white';
         });
     }
+let role = 'x';
+let buttonclicked = false;
+
+for (let i = 0; i < buttons.length; i++) {
+    buttons[i].addEventListener('click', function () {
+        if (!buttonclicked) {
+            buttons[i].innerText = role;
+            buttonclicked = true;
+        }
+    });
+}
+
+for (let m = 0; m < 18; m++) {
+    if (buttonclicked) break;
+
+    if (role === "x") role = "o";
+    else role = "x";
+}
 
     </script>
 </body>
