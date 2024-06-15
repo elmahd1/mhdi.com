@@ -5,97 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        body{
-            background-image: url(https://image.freepik.com/free-photo/playing-tic-tac-toe-variations-white-background_125869-1023.jpg);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin: 100px;
+        body {
+display: flex;
+align-content: center;
+justify-content: center;
+background-image:url(https://th.bing.com/th/id/R.e7c38b44b7277810911cb0347838edc2?rik=sOD3bPvLFBtQkQ&pid=ImgRaw&r=0);
+background-repeat: no-repeat;
+background-size: cover;
         }
-        div.container{
-            background-color:rgb(71, 70, 70);
-            border-radius: 20px;
-            height: 390px;
-            width: 420px;
-            display: none;
+        #board{
+            height:570px;
+            width: 570px;
+            background-color: antiquewhite;
+            display: flex;
+            align-content: center;
+            justify-content: center;
         }
         table{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-          border: none;
+            height:560px;
+            width: 560px;
+            background-color: aliceblue;
         }
-tr{
-    height: 120px;
-}
-td{
-    width: 120px;
-}
-button{
-    height: 120px;
-    width: 120px;
-    border-radius: 20px;
-    font-size: 60px;
-    
-}
-#start{
-height: 90px;
-width: 330px;
-background-image: url(https://th.bing.com/th/id/R.2709f9c1b7f61e1fc03dcb9728cd6649?rik=f3IxHhnHujHzAw&riu=http%3a%2f%2fpixelartmaker-data-78746291193.nyc3.digitaloceanspaces.com%2fimage%2f37227cb13801b11.png&ehk=Lt1%2bHhIEBffz%2fmskiWFpGK8leyPOPL3fhz%2bTlDcWUv8%3d&risl=&pid=ImgRaw&r=0);
-background-position: center;
-}
-
+       button{
+        height: 70px;
+        width: 70px;
+        background-position: center; background-size: 50px; background-repeat: no-repeat;
+       border: 1;
+       }
+       
     </style>
 </head>
 <body>
-   <input id="start" type="button" value="">
-    <div class="container" id="container" >
-<table id="board">
-    <tr ><td><button  id="11"></button></td> <td><button id="12"></button></td><td><button id="13"></button></td></tr>
-    <tr><td><button id="21"></button></td><td><button id="22"></button></td><td><button id="23"></button></td></tr>
-    <tr><td><button id="31"></button></td><td><button id="32"></button></td><td><button id="33"></button></td></tr>
+    <div id="board"> 
+<table>
+    <tr><td id="a8"><button style="background-color: azure;  background-image: url(corrected_chess_piece_10.png);"></button></td><td id="b8"><button style="background-image: url(corrected_chess_piece_8.png); background-color: black;"></button></td><td id="c8"><button style="background-image: url(corrected_chess_piece_9.png);background-color: azure;"></button></td><td id="d8"><button style="background-image: url(corrected_chess_piece_12.png);background-color: black;"></button></td><td id="e8"><button style="background-color: azure; background-image: url(corrected_chess_piece_11.png);"></button></td><td id="f8"><button style="background-image: url(corrected_chess_piece_9.png);background-color: black;"></button></td><td id="g8"><button style="background-image: url(corrected_chess_piece_8.png);background-color: azure;"></button></td><td id="h8"><button style="background-color: black;  background-image: url(corrected_chess_piece_10.png);"></button></td></tr>
+    <tr><td id="a7"><button style="background-color: black; background-image: url(corrected_chess_piece_7.png);"></button></td><td id="b7"><button style="background-color: azure;background-image: url(corrected_chess_piece_7.png);"></button></td><td id="c7"><button style="background-color: black; background-image: url(corrected_chess_piece_7.png);"></button></td><td id="d7"><button style="background-color: azure; background-image: url(corrected_chess_piece_7.png);"></button></td><td id="e7"><button style="background-color: black; background-image: url(corrected_chess_piece_7.png);"></button></td><td id="f7"><button style="background-color: azure; background-image: url(corrected_chess_piece_7.png);"></button></td><td id="g7"><button style="background-color: black; background-image: url(corrected_chess_piece_7.png);"></button></td><td id="h7"><button style="background-color: azure; background-image: url(corrected_chess_piece_7.png);"></button></td></tr>
+    <tr><td id="a6"><button style="background-color: azure;"></button></td><td id="b6"><button style="background-color: black;"></button></td><td id="c6"><button style="background-color: azure;"></button></td><td id="d6"><button style="background-color: black;"></button></td><td id="e6"><button style="background-color: azure;"></button></td><td id="f6"><button style="background-color: black;"></button></td><td id="g6"><button style="background-color: azure;"></button></td><td id="h6"><button style="background-color: black;"></button></td></tr>
+    <tr><td id="a5"><button style="background-color: black;"></button></td><td id="b5"><button style="background-color: azure;"></button></td><td id="c5"><button style="background-color: black;"></button></td><td id="d5"><button style="background-color: azure;"></button></td><td id="e5"><button style="background-color: black;"></button></td><td id="f5"><button style="background-color: azure;"></button></td><td id="g5"><button style="background-color: black;"></button></td><td id="h5"><button style="background-color: azure;"></button></td></tr>
+    <tr><td id="a4"><button style="background-color: azure;"></button></td><td id="b4"><button style="background-color: black;"></button></td><td id="c4"><button style="background-color: azure;"></button></td><td id="d4"><button style="background-color: black;"></button></td><td id="e4"><button style="background-color: azure;"></button></td><td id="f4"><button style="background-color: black;"></button></td><td id="g4"><button style="background-color: azure;"></button></td><td id="h4"><button style="background-color: black;"></button></td></tr>
+    <tr><td id="a3"><button style="background-color: black;"></button></td><td id="b3"><button style="background-color: azure;"></button></td><td id="c3"><button style="background-color: black;"></button></td><td id="d3"><button style="background-color: azure;"></button></td><td id="e3"><button style="background-color: black;"></button></td><td id="f3"><button style="background-color: azure;"></button></td><td id="g3"><button style="background-color: black;"></button></td><td id="h3"><button style="background-color: azure;"></button></td></tr>
+    <tr><td id="a2"><button style="background-image: url(corrected_chess_piece_1.png);background-color: azure;"></button></td><td id="b2"><button style="background-image: url(corrected_chess_piece_1.png);background-color: black;"></button></td><td id="c2"><button style="background-image: url(corrected_chess_piece_3.png);background-image: url(corrected_chess_piece_1.png);background-color: azure;"></button></td><td id="d2"><button style="background-image: url(corrected_chess_piece_1.png);background-color: black;"></button></td><td id="e2"><button style="background-image: url(corrected_chess_piece_1.png);background-color: azure;"></button></td><td id="f2"><button style="background-image: url(corrected_chess_piece_3.png);background-image: url(corrected_chess_piece_1.png);background-color: black;"></button></td><td id="g2"><button style="background-image: url(corrected_chess_piece_1.png);background-color: azure;"></button></td><td id="h2"><button style="background-image: url(corrected_chess_piece_1.png);background-color: black;"></button></td></tr>
+    <tr><td id="a1"><button style="background-color: black;background-image: url(corrected_chess_piece_4.png);"></button></td><td id="b1"><button style="background-image: url(corrected_chess_piece_2.png);background-color: azure;"></button></td><td id="c1"><button style="background-image: url(corrected_chess_piece_3.png);background-color: black;"></button></td><td id="d1"><button style="background-color: azure;background-image: url(corrected_chess_piece_6.png);"></button></td><td id="e1"><button style="background-image: url(corrected_chess_piece_5.png);background-color: black;"></button></td><td id="f1"><button style="background-image: url(corrected_chess_piece_3.png);background-color: azure;"></button></td><td id="g1"><button style="background-image: url(corrected_chess_piece_2.png);background-color: black;"></button></td><td id="h1"><button style="background-color: azure;background-image: url(corrected_chess_piece_4.png);"></button></td></tr>
+
+
 </table>
-    </div>
-  
-    <script>
-     let start=document.getElementById("start");
-     let cont=document.getElementById("container");
-     start.addEventListener('click',function(){
-start.style.display='none';
-cont.style.display='block';
-     })
-     start.addEventListener('mouseover',function(){
-        start.style.cursor='pointer';
-     })
-         let buttons=document.getElementsByTagName("button");
-    for(let i=0;i<buttons.length;i++){
-        buttons[i].addEventListener('mouseover',function(){
-buttons[i].style.cursor='pointer';
-buttons[i].style.backgroundColor='blue';
-        });
-        buttons[i].addEventListener('mouseout',function(){
-buttons[i].style.backgroundColor='white';
-        });
-    }
-let role = 'x';
-let buttonclicked = false;
+</div>
+<script>
 
-for (let i = 0; i < buttons.length; i++) {
-    buttons[i].addEventListener('click', function () {
-        if (!buttonclicked) {
-            buttons[i].innerText = role;
-            buttonclicked = true;
-        }
-    });
-}
-
-for (let m = 0; m < 18; m++) {
-    if (buttonclicked) break;
-
-    if (role === "x") role = "o";
-    else role = "x";
-}
-
-    </script>
+</script>
 </body>
 </html>
